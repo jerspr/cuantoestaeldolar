@@ -641,8 +641,9 @@ ul,ol {
 }
 
 .time span {
-    color: #007C89;
-    padding-left: 10px
+    color: #000;
+    padding-left: 10px;
+    text-transform: uppercase;
 }
 
 .block_price_d {
