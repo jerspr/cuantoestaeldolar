@@ -645,6 +645,11 @@ ul,ol {
     padding-left: 10px;
     text-transform: uppercase;
 }
+.wrapper-content .time span{
+    color: #007C89;
+    padding-left: 10px;
+    text-transform: initial;
+}
 
 .block_price_d {
     padding: 20px 0px
