@@ -640,12 +640,12 @@ ul,ol {
     font-size: 16px
 }
 
-.time span {
+.nav-movil .time span {
     color: #000;
     padding-left: 10px;
     text-transform: uppercase;
 }
-.wrapper-content .time span{
+.block-table-p .time span{
     color: #007C89;
     padding-left: 10px;
     text-transform: initial;
