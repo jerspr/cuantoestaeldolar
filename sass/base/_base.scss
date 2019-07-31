@@ -1033,6 +1033,9 @@ body{
     
 }
 @media only screen and (max-width: 992px){
+  .inner-list-c-c{
+    margin-bottom: 40px;
+  }
   .wrapper-table{
     .td{
       &.block-p-o{
@@ -1096,6 +1099,47 @@ body{
   .block-news-p{
     padding-bottom: 0;
   }
+  .ads-small-300x600{
+    text-align: center;
+  }
+  .block-search-direct{
+    padding-left: 0;
+  }
+  .block-search-direct{
+    .btn_principal{
+      margin-top: 20px;
+    }
+  }
+  .block-body-p{
+    h1{
+      font-size: 30px;
+    }
+  }
+  .item-desc-c-c{
+    h2{
+      a{
+        font-size: 20px;
+      }
+    }
+    h3{
+      font-size: 22px;
+    }
+  }
+  .inner-search-direct{
+    span{
+      position: initial;
+      margin-bottom: 20px;
+      display: block;
+      width: 100%;
+    }
+  }
+  .item-city{
+    h2{
+      a{
+        font-size: 26px;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 768px){
   .block-preci-one{
@@ -1114,6 +1158,42 @@ body{
     }
     .tb_dollar_venta{
       font-size: 18px;
+    }
+  }
+  .item-fig-c-c{
+    figure{
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .block-body-p{
+    h1{
+      font-size: 24px;
+    }
+  }
+  .item-desc-c-c{
+    h2{
+      a{
+        font-size: 18px;
+      }
+    }
+    h3{
+      font-size: 18px;
+    }
+  }
+  .block-list-city{
+    .row{
+      .col-lg-4{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .item-city{
+    h2{
+      a{
+        font-size: 20px;
+      }
     }
   }
 }
