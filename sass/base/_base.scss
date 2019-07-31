@@ -102,6 +102,7 @@ body{
 }
 .tb_usa_pen .tb_rs .td{
   width: 50%;
+  font-size: 18px;
 }
 .tb_usa_pen .tb_rs .td:first-child {
   text-align: right;
@@ -434,6 +435,11 @@ body{
   }
 }
 .block-preci-one{
+  time{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
   h1{
     font-weight: 700;
     margin-bottom: 30px;
@@ -661,6 +667,7 @@ body{
     color: #333333;
     display: block;
     margin-bottom: 2px;
+    font-weight: 500;
   }
   p{
     font-size: 18px;
@@ -956,10 +963,213 @@ body{
     left: 0;
   }
   p{
-    line-height: 140%;
+    line-height: 150%;
     margin-bottom: 0;
     font-size: 22px;
     color: #80387D;
     padding-left: 80px;
+  }
+}
+.block-info-t{
+  margin-bottom: 30px;
+}
+.block-info-w{
+  a{
+    display: block;
+    font-size: 24px;
+    color: #205985;
+    font-weight: 500;
+  }
+}
+.item-p-c{
+  span{
+    font-size: 18px;
+    color: #007C89;
+    margin-bottom: 10px;
+    display: block;
+  }
+  div{
+    font-size: 24px;
+    color: #000000;
+  }
+}
+.item-place-desc{
+  margin-bottom: 40px;
+  h3{
+    color: #000000;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+}
+.addr-item{
+  background: #FAFAFA;
+  padding: 10px;
+}
+.item-place-p{
+  height: 100%;
+  a{
+    display: block;
+    font-size: 24px;
+    color: #205985;
+    font-weight: 700;
+  }
+  p{
+    margin-bottom: 0;
+    line-height: 140%;
+    color: #000000;
+    font-size: 18px;
+  }
+}
+.addr-item{
+  .row{
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+@media only screen and (max-width: 1200px){
+    
+}
+@media only screen and (max-width: 992px){
+  .wrapper-table{
+    .td{
+      &.block-p-o{
+        width: 100%;
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        border-left: 0;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .block-left{
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .block-sidebar{
+    width: 100%;
+    margin-left: 0;
+  }
+  .inner-eq{
+    margin-bottom: 30px;
+  }
+  .item-news{
+    margin-bottom: 40px;
+  }
+  .item-house-d{
+    margin-bottom: 40px;
+  }
+  .block-house-d{
+    .row{
+      .col-lg-3{
+        &:last-child{
+          .item-house-d{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .block-inner-left{
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .block-inner-sidebar{
+    width: 100%;
+    margin-left: 0;
+  }
+  .ads-small{
+    margin-bottom: 40px;
+    text-align: center;
+    img{
+      width: auto;
+    }
+  }
+  .block-grapic-u{
+    margin-bottom: 40px;
+  }
+  .block-news-p{
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 768px){
+  .block-preci-one{
+    h1{
+      font-size: 30px;
+    }
+  }
+  .title-block{
+    h2{
+      font-size: 22px;
+    }
+  }
+  .tb_dollar{
+    .tb_dollar_compra{
+      font-size: 18px;
+    }
+    .tb_dollar_venta{
+      font-size: 18px;
+    }
+  }
+}
+@media only screen and (max-width: 480px){
+  .title-block{
+    margin-bottom: 22px;
+  }
+  .logo-eq{
+    position: initial;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .eq-block-one{
+    p{
+      padding-left: 0;
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+  .block-house-d{
+    padding-bottom: 0;
+  }
+  .ico-western-union {
+    width: 130px;
+    height: 31px;
+  }
+  .ico-sunat {
+    width: 90px;
+    height: 26px;
+  }
+  .ico-cambista {
+    width: 95px;
+    height: 20px;
+  }
+  .ico-tkcambio {
+    width: 95px;
+    height: 32px;
+  }
+  .ico-rextie {
+    width: 104px;
+    height: 30px;
+  }
+  .btn_emergente {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+  .item-house-d{
+    figure{
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+  .item-news{
+    figure{
+      margin-left: -15px;
+      margin-right: -15px; 
+    }
   }
 }

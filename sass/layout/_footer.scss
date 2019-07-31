@@ -39,3 +39,31 @@
         }
     }
 }
+@media only screen and (max-width: 1200px){
+    
+}
+@media only screen and (max-width: 992px){
+    .inner-footer{
+        text-align: center;
+    }
+    .wrapper-footer{
+        .copy{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        ul{
+            width: 100%;
+            text-align: center;
+            li{
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 480px){
+    
+}
