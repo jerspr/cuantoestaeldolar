@@ -73,9 +73,22 @@
     vertical-align: middle;
     text-align: right
 }
-#header_top .td_nav_header .td_social_h a {
-    padding: 0px 5px;
-    display: inline-block;
+#header_top{
+    .td_nav_header{
+        .td_social_h{
+            a{
+                padding: 0px 5px;
+                display: inline-block;
+                &:active,
+                &:hover,
+                &:focus{
+                    .fill-bg-social{
+                        fill: rgba(0,0,0,0.2);
+                    }
+                }
+            }
+        }
+    }   
 }
 #header_top .td_nav_header>div:nth-child(2) {
     display: none

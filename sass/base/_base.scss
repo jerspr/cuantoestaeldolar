@@ -138,7 +138,7 @@ body{
   }
 }
 .btn_verde {
-  background-color: #007C89;
+  background-color: #009688;
   color: white;
   &:active,
   &:focus,
@@ -221,9 +221,18 @@ body{
   .row{
     margin-left: -7px;
     margin-right: -7px;
-    .col-lg-3{
+    .col-lg-3,
+    .col-lg-9{
       padding-left: 7px;
       padding-right: 7px;
+    }
+    .custom-row-v{
+      margin-left: -13px;
+      margin-right: -13px;
+      .col-lg-6{
+        padding-left: 13px;
+        padding-right: 13px;
+      }
     }
   }
 }
@@ -356,16 +365,19 @@ body{
     background: url(../img/arrow-dow.svg?v1) no-repeat 95% 50%;
     background-color: #fafafa;
     border: 0px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    border-radius: 2px;
     -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    -webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.15);
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.15)
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    &:active,
+    &:hover,
+    &:focus{
+      background: #fff url(../img/arrow-dow.svg?v1) no-repeat 95% 50%;
+    }
   }
 }
 .tb_dollar_hd {
@@ -513,7 +525,6 @@ body{
 .emergente_wu {
   background-color: #FFE01B;
   color: black;
-  font-weight: bold;
   border: 1px solid #FFE01B;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
@@ -528,14 +539,13 @@ body{
 .emergente_tkambio {
   background-color: #33B6FF;
   color: white;
-  font-weight: bold;
   border: 1px solid #33B6FF;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
 .emergente_tkambio:hover {
-  background-color: white;
-  color: #33B6FF;
+  background-color: #33B6FF;
+  color: #fff;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
@@ -739,6 +749,14 @@ body{
 }
 .item-city{
   height: 100%;
+  .row{
+    margin-left: -10px;
+    margin-right: -10px;
+    .col-lg-12{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
   figure{
     margin-bottom: 17px;
     a{
@@ -797,6 +815,12 @@ body{
   }
 }
 .item-fig-c-c{
+  &.text-center{
+    figure{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
   figure{
     text-align: right;
     margin-bottom: 0;
@@ -915,11 +939,11 @@ body{
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .row{
+  &>.row{
     margin-left: -10px;
     margin-right: -10px;
-    .col-lg-4,
-    .col-lg-8{
+    &>.col-lg-4,
+    &>.col-lg-8{
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -977,6 +1001,9 @@ body{
 }
 .block-info-t{
   margin-bottom: 30px;
+  .btn_emergente{
+    margin-top: 15px;
+  }
 }
 .block-info-w{
   a{
@@ -1234,9 +1261,13 @@ body{
     }
   }
   .item-city{
+    figure{
+      margin-bottom: 0;
+    }
     h2{
+      margin-top: 9%;
       a{
-        font-size: 20px;
+        font-size: 24px;
       }
     }
   }
