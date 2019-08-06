@@ -443,6 +443,63 @@
 .header-movil {
     display: none;
 }
+.block-change-t{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    z-index: 6;
+    display: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.13);
+    padding: 7px;
+    .wrapper-table{
+        .td{
+            vertical-align: top;
+        }
+    }
+    .casa_price_head{
+        border-right: 1px solid #f3f3f3;
+        padding: 0 10px;
+        &:last-child{
+            border-right: 0;
+        }
+        .casa_h_logo {
+            width: 55px;
+            height: 26px;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-position: top;
+        }
+        ._ic_wu {
+            background-image: url(../img/ic_wu.svg);
+            background-size: 100%;
+        }
+        ._ic_tkambio {
+            background-image: url(../img/ic_tkambio.svg);
+            background-size: contain;
+        }
+        p {
+            color: #007c89;
+            font-size: 18px;
+            margin: 0 0 5px;
+            line-height: 120%;
+            text-align: right;
+        }
+        span {
+            display: block;
+            font-size: 18px;
+            line-height: 100%;
+            text-align: right;
+        }
+        .t-change{
+            display: block;
+            color: #205985;
+            font-size: 16px;
+        }
+    }
+}
 @media (min-width: 576px){
     .container-publicity {
         max-width: 570px;
@@ -477,6 +534,15 @@
     .wrapper-content{
         width: 100%;
     }
+    .header-movil{
+        &.stick{
+            &.blockUp{
+                .block-change-t{
+                    display: block;
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 768px){
     #header_top_movil{
@@ -497,7 +563,40 @@
     }
 }
 @media only screen and (max-width: 480px){
-    
+    .block-change-t{
+        .casa_price_head{
+            padding: 0 8px;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+            .t-change{
+                font-size: 14px;
+            }
+            .casa_logo{
+                padding-top: 7px;
+            }
+            .casa_h_logo {
+                width: 42px;
+                height: 22px;
+            }
+            .casa_h_compra{
+                padding-top: 6px;
+                padding-right: 5px;
+            }
+            .casa_h_venta{
+                padding-top: 6px;
+            }
+            p{
+                font-size: 15px;
+            }
+            span{
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 

@@ -519,6 +519,7 @@ var main = {
     	}
     	if(document.getElementById("btn_nav_movil") != null){
       		main.openNavMovil();
+      		main.scrollUpDown();
     	}
 	},
 	navFixed:function(){
@@ -659,6 +660,21 @@ var main = {
 		        return signo * (num[0] + 'e' + (num[1] ? (+num[1] - decimales) : -decimales));
       		}
     	}
+  	},
+  	scrollUpDown: function(){
+  		var lastScrollTop = 0;
+
+		window.addEventListener("scroll", function(){
+		   	var st = window.pageYOffset || document.documentElement.scrollTop; 
+		   	if (st > lastScrollTop){
+		   		$("#header_top_movil").addClass("blockDown");
+		   		$("#header_top_movil").removeClass("blockUp");
+		   	} else {
+		   		$("#header_top_movil").addClass("blockUp");
+		     	$("#header_top_movil").removeClass("blockDown");
+		   	}
+		   	lastScrollTop = st;
+		}, false);
   	}
 }
 

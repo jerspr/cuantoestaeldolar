@@ -288,28 +288,34 @@ body{
 .list-preci-t{
   .panel-body{
     color: white;
-    background: #009688;
-    padding: 5px;
     .link_panel {
-      color: #fff;
       display: block;
-      padding: 5px;
-      border-bottom: 1px solid #ccc;
-      font-size: 24px;
-      line-height: 110%;
+      padding: 0 5px;
+      background: #009688;
       &:last-child{
         border-bottom: 0;
+        a{
+          border-bottom: 0;
+        }
       }
-    }
-  }
-}
-#accordion{
-  &:hover,
-  &:active,
-  &:focus{
-    .list-preci-t{
-      .panel-body{
+      &:active,
+      &:hover,
+      &:focus{
         background: #027A6F;
+      }
+      a{
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        line-height: 110%;
+        &:active,
+        &:hover,
+        &:focus{
+          text-decoration: none;
+          color: #fff;
+        }
       }
     }
   }
