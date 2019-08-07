@@ -521,6 +521,7 @@ var main = {
       		main.openNavMovil();
       		main.scrollUpDown();
     	}
+    	main.chartGrafica();
 	},
 	navFixed:function(){
 	   	if($('#header_top').length){
@@ -561,6 +562,49 @@ var main = {
 	      	btnNav.one("click", handler1);
 	    }
 	    btnNav.one("click", handler1);
+  	},
+  	chartGrafica: function(){
+  		google.charts.load('current', {'packages':['corechart']});
+	    google.charts.setOnLoadCallback(drawChart);
+	    
+	    function drawChart() {
+	    	var jsonData = $.ajax({
+	            type: 'get',
+	            url: './dist/js/jsBloomberg.json?v1',
+	            dataType:"json",
+	            success: function(response, status, jqXHR) {
+	            	var data = new google.visualization.DataTable();
+	      			data.addColumn('datetime', 'Hora del día');
+	      			data.addColumn('number','Dólar');
+	      			$.each(response.price, function (key, resp) {
+	      				data.addRow([new Date(resp.dateTime), resp.value]);
+	      			});
+
+	      			var options = {
+				        width: '100%',
+					    height: 300,
+				        curveType: 'function',
+				        legend: { position: 'bottom' },
+				        series: {
+				          	0: { color: '#007C89' },
+				        },
+				        hAxis: {
+					        format: 'H:m',
+					        gridlines: {count: 15}
+					    },
+					    vAxis: {
+					        gridlines: {color: 'none'},
+					        minValue: 3.3073,
+				          	maxValue: 3.3129
+				        }
+	      			};
+
+	      			var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+	      			chart.draw(data, options);
+	            }
+	        });
+	    }
   	},
   	changeDollar: function(){
 	    var btnSelect = $("#btn_change");
